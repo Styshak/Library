@@ -11,6 +11,7 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"/>
 	<!-- Compiled and minified JavaScript -->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"/>
+
 </h:head>
 <h:body styleClass="cyan lighten-5">
 
@@ -27,15 +28,15 @@
 										<p:growl autoUpdate="true" />
 										<div class="row">
 											<div class="col s12 input-field">
-												<h:outputLabel for="login" value="Login" />
-												<h:inputText id="login" required="true" requiredMessage="Login required!" />
+												<h:outputLabel for="login" value="${msg.login}" />
+												<h:inputText id="login" required="true" requiredMessage="${msg.login_required}" />
 											</div>
 											<div class="col s12 input-field">
-												<h:outputLabel for="password" value="Password" />
-												<h:inputSecret id="password" required="true" requiredMessage="Password required!" />
+												<h:outputLabel for="password" value="${msg.password}" />
+												<h:inputSecret id="password" required="true" requiredMessage="${msg.password_required}" />
 											</div>
 											<div class="col s12 input-field">
-												<p:commandLink value="Log in" styleClass="btn btn-large" />
+												<p:commandLink value="${msg.signin}" styleClass="btn btn-large" />
 											</div>
 										</div>
 									</h:form>

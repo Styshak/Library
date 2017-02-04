@@ -5,8 +5,6 @@
   <artifactId>Library</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>Library Maven Webapp</name>
-  <url>http://maven.apache.org</url>
 
 
   <properties>
@@ -14,16 +12,13 @@
     <servlet.version>3.1</servlet.version>
     <jsf.version>RELEASE</jsf.version>
     <primefaces.version>6.0</primefaces.version>
+    <spring.framework.version>4.3.3.RELEASE</spring.framework.version>
+    <spring.webflow-version>RELEASE</spring.webflow-version>
+    <spring.security.version>4.1.3.RELEASE</spring.security.version>
   </properties>
 
   <dependencies>
-    <!-- Servlet -->
-    <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>javax.servlet-api</artifactId>
-      <version>${servlet.version}</version>
-      <scope>provided</scope>
-    </dependency>
+
     <!-- JSF -->
     <dependency>
       <groupId>com.sun.faces</groupId>
@@ -37,11 +32,39 @@
       <version>${jsf.version}</version>
       <scope>compile</scope>
     </dependency>
+
     <!-- PrimeFaces -->
     <dependency>
       <groupId>org.primefaces</groupId>
       <artifactId>primefaces</artifactId>
       <version>${primefaces.version}</version>
+    </dependency>
+
+    <!-- Spring -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>${spring.framework.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-webmvc</artifactId>
+      <version>${spring.framework.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.webflow</groupId>
+      <artifactId>spring-faces</artifactId>
+      <version>${spring.webflow-version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.security</groupId>
+      <artifactId>spring-security-web</artifactId>
+      <version>${spring.security.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.security</groupId>
+      <artifactId>spring-security-config</artifactId>
+      <version>${spring.security.version}</version>
     </dependency>
   </dependencies>
   
