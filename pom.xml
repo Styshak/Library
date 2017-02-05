@@ -15,6 +15,8 @@
     <spring.framework.version>4.3.3.RELEASE</spring.framework.version>
     <spring.webflow-version>RELEASE</spring.webflow-version>
     <spring.security.version>4.1.3.RELEASE</spring.security.version>
+    <hibernate.version>5.2.6.Final</hibernate.version>
+    <h2.version>1.4.192</h2.version>
   </properties>
 
   <dependencies>
@@ -66,8 +68,30 @@
       <artifactId>spring-security-config</artifactId>
       <version>${spring.security.version}</version>
     </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-orm</artifactId>
+      <version>${spring.framework.version}</version>
+    </dependency>
+
+
+    <!-- Hibernate -->
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-core</artifactId>
+      <version>${hibernate.version}</version>
+    </dependency>
+
+    <!-- h2 -->
+    <dependency>
+      <groupId>com.h2database</groupId>
+      <artifactId>h2</artifactId>
+      <version>${h2.version}</version>
+    </dependency>
+
+
   </dependencies>
-  
+
   <build>
     <finalName>Library</finalName>
   </build>
