@@ -14,7 +14,7 @@
             <div class="left-menu">
                 <h:form styleClass="genres" id="genresForm">
                     <ul>
-                        <ui:repeat value="${genreDAOImpl.getGenres()}" var="g">
+                        <ui:repeat value="${genreServiceImpl.getGenres()}" var="g">
                             <li>
                                 <p:commandLink value="${g.name}"/>
                             </li>

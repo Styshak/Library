@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+	<persistence-unit name="LibraryPU">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<class>com.styshak.entities.Author</class>
+		<class>com.styshak.entities.Book</class>
+		<class>com.styshak.entities.Genre</class>
+		<class>com.styshak.entities.Publisher</class>
+		<properties>
+			<property name="connection.datasource" value="dataSource"/>
+			<property name="hibernate.archive.autodetection" value="class"/>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
+			<property name="hibernate.show_sql" value="true"/>
+			<property name="hibernate.format_sql" value="true"/>
+			<property name="hibernate.hbm2ddl.auto" value="update"/>
+			<property name="hibernate.current_session_context_class" value="org.springframework.orm.hibernate5.SpringSessionContext"/>
+		</properties>
+	</persistence-unit>
+</persistence>

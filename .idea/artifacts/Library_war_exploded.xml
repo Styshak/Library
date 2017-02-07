@@ -46,6 +46,8 @@
           <element id="library" level="project" name="Maven: org.jboss.spec.javax.interceptor:jboss-interceptors-api_1.1_spec:1.0.0.Beta1" />
           <element id="library" level="project" name="Maven: javax.annotation:jsr250-api:1.0" />
           <element id="library" level="project" name="Maven: javax.inject:javax.inject:1" />
+          <element id="library" level="project" name="Maven: org.hibernate:hibernate-entitymanager:5.2.6.Final" />
+          <element id="library" level="project" name="Maven: net.bytebuddy:byte-buddy:1.5.4" />
           <element id="library" level="project" name="Maven: com.h2database:h2:1.4.192" />
         </element>
       </element>

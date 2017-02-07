@@ -1150,46 +1150,41 @@
       <RefKeyName>CONSTRAINT_7</RefKeyName>
       <RefColNames>ID</RefColNames>
     </foreign-key>
-    <foreign-key id="312" parent="35" name="FKM1T3YVW5I7OLWDF32CWUUL7TA">
-      <ColNames>GENRE_ID</ColNames>
-      <RefSchemaName>PUBLIC</RefSchemaName>
-      <RefTableName>GENRE</RefTableName>
-      <RefKeyName>CONSTRAINT_4</RefKeyName>
-      <RefColNames>ID</RefColNames>
-    </foreign-key>
-    <foreign-key id="313" parent="35" name="FKGTVT7P649S4X80Y6F4842PNFQ">
+    <foreign-key id="312" parent="35" name="FKGTVT7P649S4X80Y6F4842PNFQ">
       <ColNames>PUBLISHER_ID</ColNames>
       <RefSchemaName>PUBLIC</RefSchemaName>
       <RefTableName>PUBLISHER</RefTableName>
       <RefKeyName>CONSTRAINT_F</RefKeyName>
       <RefColNames>ID</RefColNames>
     </foreign-key>
-    <column id="314" parent="36" name="ID">
+    <column id="313" parent="36" name="ID">
       <Position>1</Position>
       <DataType>INTEGER(10)|4</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
+      <DefaultExpression>(NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_26A374C8_11EE_499E_B0B9_A2B7634A8F2A)</DefaultExpression>
     </column>
-    <column id="315" parent="36" name="NAME">
+    <column id="314" parent="36" name="NAME">
       <Position>2</Position>
       <DataType>VARCHAR(255)|12</DataType>
+      <NotNull>1</NotNull>
     </column>
-    <key id="316" parent="36" name="CONSTRAINT_4">
+    <key id="315" parent="36" name="CONSTRAINT_4">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="317" parent="37" name="ID">
+    <column id="316" parent="37" name="ID">
       <Position>1</Position>
       <DataType>INTEGER(10)|4</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="318" parent="37" name="NAME">
+    <column id="317" parent="37" name="NAME">
       <Position>2</Position>
       <DataType>VARCHAR(255)|12</DataType>
     </column>
-    <key id="319" parent="37" name="CONSTRAINT_F">
+    <key id="318" parent="37" name="CONSTRAINT_F">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID</ColNames>
       <Primary>1</Primary>

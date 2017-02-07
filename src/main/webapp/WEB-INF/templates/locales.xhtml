@@ -3,8 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:ui="http://java.sun.com/jsf/facelets"
-      xmlns:f="http://java.sun.com/jsf/core"
-      xmlns:p="http://primefaces.org/ui">
+      xmlns:f="http://java.sun.com/jsf/core">
     <h:head>
         <title>Facelet Title</title>
     </h:head>
@@ -12,13 +11,13 @@
         <ui:composition>
             <div class="lang">
                 <h:form style="display: inline;">
-                    <h:commandLink>
+                    <h:outputLink value="?lang=ru">
                         <h:graphicImage library="images" name="rus.png" title="" width="16" height="13"/>
-                    </h:commandLink>
+                    </h:outputLink>
 
-                    <h:commandLink>
+                    <h:outputLink value="?lang=en">
                         <h:graphicImage library="images" name="usa.png" title="" width="16" height="13"/>
-                    </h:commandLink>
+                    </h:outputLink>
                 </h:form>
             </div>
         </ui:composition>
