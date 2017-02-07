@@ -2,21 +2,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
 	  xmlns:h="http://java.sun.com/jsf/html"
-	  xmlns:p="http://primefaces.org/ui">
+	  xmlns:p="http://primefaces.org/ui"
+	  xmlns:ui="http://java.sun.com/jsf/facelets">
 <h:head>
 	<title>Welcome to online library</title>
-	<!-- Compiled and minified CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css" />
-	<!--Import jQuery before materialize.js-->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"/>
-	<!-- Compiled and minified JavaScript -->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"/>
-	<link type="text/css" rel="stylesheet" href="//sumome-140a.kxcdn.com/virtual/a3b6497b4fe40ee58cbb104417f8347a8ecc325c/client/js/../css/sumome-share-client.css"/>
-
 </h:head>
 <h:body styleClass="cyan lighten-5">
 
-	<div class="valign-wrapper" id="login-page">
+	<!--<div class="valign-wrapper" id="login-page">
 		<div class="container">
 			<div class="center-align">
 				<div class="row">
@@ -64,6 +60,9 @@
 		$(document).on("ready", function () {
 			$("#login-page").css({"height": window.innerHeight + "px"});
 		});
-	</h:outputScript>
+	</h:outputScript>-->
+	<ui:composition template="/WEB-INF/templates/library.xhtml">
+
+	</ui:composition>
 </h:body>
 </html>

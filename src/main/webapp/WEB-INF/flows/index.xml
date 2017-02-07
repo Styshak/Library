@@ -4,8 +4,8 @@
       xsi:schemaLocation="http://www.springframework.org/schema/webflow http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd">
 
     <view-state id="index">
-    <on-render>
+    <!--<on-render>
         <evaluate expression="testBean.test()"/>
-    </on-render>
+    </on-render>-->
     </view-state>
 </flow>

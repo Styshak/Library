@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="dbDummy://dbtable:/500f96d0/d22f15cc-5e23-41f2-bae8-c0910d121f4d/LIBRARY.PUBLIC.GENRE" dialect="H2" />
+  </component>
+</project>
