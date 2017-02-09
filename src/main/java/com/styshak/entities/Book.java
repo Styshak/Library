@@ -8,6 +8,8 @@ import java.util.Arrays;
 @Table(name = "book")
 public class Book implements Serializable {
 
+    private static final long serialVersionUID = -9185786409446687339L;
+
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.AUTO)

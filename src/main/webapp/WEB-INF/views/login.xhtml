@@ -3,6 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
 	  xmlns:h="http://java.sun.com/jsf/html"
 	  xmlns:p="http://primefaces.org/ui"
+	  xmlns:c="http://java.sun.com/jsp/jstl/core"
 	  xmlns:ui="http://java.sun.com/jsf/facelets">
 <h:head>
 	<title>Welcome to online library</title>
@@ -12,7 +13,7 @@
 </h:head>
 <h:body styleClass="cyan lighten-5">
 
-	<!--<div class="valign-wrapper" id="login-page">
+	<div class="valign-wrapper" id="login-page">
 		<div class="container">
 			<div class="center-align">
 				<div class="row">
@@ -21,18 +22,18 @@
 							<div class="card-content">
 								<img class="responsive-img" src="" alt="" style="max-width: 64px;" />
 								<div class="left-align">
-									<h:form id="form-login">
+									<h:form id="form-login" action="#{request.contextPath}/app/checkuser" method='POST'>
 										<p:growl autoUpdate="true" />
 										<div class="row">
 											<div class="col s12 input-field">
 												<i class="mdi-social-person-outline prefix"/>
 												<h:outputLabel for="login" value="${msg.login}" />
-												<h:inputText id="login" required="true" requiredMessage="${msg.login_required}" />
+												<h:inputText id="login" value="#{user.login}" required="true" requiredMessage="${msg.login_required}" />
 											</div>
 											<div class="col s12 input-field">
 												<i class="mdi-action-lock-outline prefix"/>
 												<h:outputLabel for="password" value="${msg.password}" />
-												<h:inputSecret id="password" required="true" requiredMessage="${msg.password_required}" />
+												<h:inputSecret id="password" value="#{user.password}" required="true" requiredMessage="${msg.password_required}" />
 											</div>
 											<div class="col s12 input-field">
 												<div class="input-field col s4">
@@ -43,10 +44,17 @@
 													<h:outputLabel for="remember-me" value="Запомнить меня"/>
 												</div>
 												<div class="input-field col s4">
-													<p:commandLink value="${msg.signin}" styleClass="btn btn-large waves-effect waves-light right" />
+													<p:commandLink value="${msg.signin}" type="submit" styleClass="btn btn-large waves-effect waves-light right" />
 												</div>
 											</div>
 										</div>
+
+										<c:if test="${not empty param.login_failed}">
+											<div class="error">
+												Login failed
+											</div>
+										</c:if>
+
 									</h:form>
 								</div>
 							</div>
@@ -60,9 +68,6 @@
 		$(document).on("ready", function () {
 			$("#login-page").css({"height": window.innerHeight + "px"});
 		});
-	</h:outputScript>-->
-	<ui:composition template="/WEB-INF/templates/library.xhtml">
-
-	</ui:composition>
+	</h:outputScript>
 </h:body>
 </html>

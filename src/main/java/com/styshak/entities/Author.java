@@ -8,6 +8,8 @@ import java.io.Serializable;
 @Table(name = "author")
 public class Author implements Serializable {
 
+    private static final long serialVersionUID = 1213430638853263075L;
+
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.AUTO)
