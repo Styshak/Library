@@ -16,7 +16,7 @@
                     <ul>
                         <ui:repeat value="${genreServiceImpl.getGenres()}" var="g">
                             <li>
-                                <p:commandLink value="${g.name}"/>
+                                <p:commandLink value="#{currentLocale.getLocaleCode() eq 'ru' ? g.name : g.name_en}"/>
                             </li>
                         </ui:repeat>
                     </ul>

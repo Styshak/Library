@@ -1,15 +1,18 @@
 package com.styshak.utils;
 
-import org.springframework.context.i18n.LocaleContextHolder;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 public class Letters {
 
+	@Autowired
+	private CurrentLocale locale;
+
 	private Character[] letters;
 
 	public Character[] getLetters() {
-		if(LocaleContextHolder.getLocale().getLanguage().equals("ru")) {
+		if(locale.getLocaleCode().equals("ru")) {
 			letters = new Character[]
 					{'А', 'Б', 'В', 'Г', 'Д', 'Е', 'Ё', 'Ж', 'З', 'И', 'Й', 'К', 'Л', 'М', 'Н', 'О', 'П', 'Р', 'С', 'Т', 'У', 'Ф', 'Х', 'Ц', 'Ч', 'Ш', 'Щ', 'Ъ', 'Ы', 'Ь', 'Э', 'Ю', 'Я'};
 		} else {

@@ -112,6 +112,8 @@ body {
 .nav li {float: left; font-size: 14px; border-left: 1px solid #e2e2e2;}
 .nav li:first-child {border: none;}
 .nav li a {padding: 9px 0px 9px 0px; text-decoration: none; color: #888; display: block; width: 27px; text-align: center;}
+.nav li a:lang(ru) {padding: 9px 0px 9px 0px; text-decoration: none; color: #888; display: block; width: 27px; text-align: center;}
+.nav li a:lang(en) {padding: 9px 0px 9px 0px; text-decoration: none; color: #888; display: block; width: 39px; text-align: center;}
 .nav li a:hover {background: #ceeefb;}
 .nav li a.selected {background: #ceeefb;}
 

@@ -15,7 +15,7 @@
 
             <h:form styleClass="search_form" id="search_form">
 
-                <input type="submit" class="button-text"></input>
+                <input class="button-text"/>
 
                 <h:inputText id="search_string" styleClass="search-text"/>
 
@@ -26,7 +26,7 @@
                 </div>
 
                 <h:outputScript>
-                    document.getElementById("search_form:search_string").setAttribute("placeholder","${search_placeholder}");
+                    document.getElementById("search_form:search_string").setAttribute("placeholder","${msg.search_placeholder}");
                 </h:outputScript>
 
             </h:form>

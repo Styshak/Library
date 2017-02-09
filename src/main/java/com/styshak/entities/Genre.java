@@ -15,6 +15,9 @@ public class Genre implements Serializable {
     @Column(name = "name")
     private String name;
 
+    @Column(name = "name_en")
+    private String name_en;
+
     public int getId() {
         return id;
     }
@@ -29,6 +32,14 @@ public class Genre implements Serializable {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getName_en() {
+        return name_en;
+    }
+
+    public void setName_en(String name_en) {
+        this.name_en = name_en;
     }
 
     @Override
